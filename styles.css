@@ -173,5 +173,5 @@ img {
     text-decoration: none;
     color: var(--d);
     font-weight: 600;
-    animation: fire 1s linear infinite;
+    animation: fire 5s linear infinite;
 }
