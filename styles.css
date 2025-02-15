@@ -46,36 +46,36 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     font-family: 'Cinzel', serif;
-    text-shadow: 0px 0px 1px yellow;
-    animation: fire 5s linear infinite;
+    text-shadow: 0px 0px 3px yellow;
+    
 }
 @keyframes fire {
     0% {
         text-shadow: 0px 0px 1px yellow;
     }
     10% {
-        text-shadow: 0px 0px 2px yellow;
+        text-shadow: 0px 0px 1px yellow;
     }
     20% {
-        text-shadow: 0px 0px 3px yellow;
+        text-shadow: 0px 0px 2px yellow;
     }
     30% {
-        text-shadow: 0px 0px 4px yellow;
+        text-shadow: 0px 0px 2px yellow;
     }
     40% {
-        text-shadow: 0px 0px 5px yellow;
+        text-shadow: 0px 0px 2px yellow;
     }
     50% {
-        text-shadow: 0px 0px 6px yellow;
+        text-shadow: 0px 0px 1px yellow;
     }
     60% {
-        text-shadow: 0px 0px 5px yellow;
+        text-shadow: 0px 0px 2px yellow;
     }
     70% {
-        text-shadow: 0px 0px 4px yellow;
+        text-shadow: 0px 0px 2px yellow;
     }
     80% {
-        text-shadow: 0px 0px 3px yellow;
+        text-shadow: 0px 0px 2px yellow;
     }
      90% {
         text-shadow: 0px 0px 2px yellow;
@@ -138,7 +138,7 @@ font-family: 'IM Fell English', serif;
 img {
     width:100%;
     height: auto;
-    max-height: 17vh;
+    max-height: 10vh;
     color: yellow;
     display: block;
     object-fit: contain;
@@ -150,9 +150,9 @@ img {
         max-height: 100vh;
         z-index: -5;
     }
-    body {
-        padding-bottom: 10px;
-    }
+   .footer {
+    display: none;
+   }
     #controls {
         width: 100%;
         display: flex;
@@ -165,7 +165,7 @@ img {
 }
 .footer {
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
     color: var(--d);
     font-family: 'Cinzel', serif;
 }
@@ -173,4 +173,5 @@ img {
     text-decoration: none;
     color: var(--d);
     font-weight: 600;
+    animation: fire 1s linear infinite;
 }
