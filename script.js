@@ -108,3 +108,31 @@ function fightSlime() {
 function fightBeast() {
 
 }
+
+//chispas
+const container = document.querySelector(".spark-container");
+
+function createSpark() {
+    const spark = document.createElement("div");
+    spark.classList.add("spark");
+
+    // Posición inicial aleatoria dentro del contenedor
+    const randomX = Math.random() * 160 - 130; // De -30px a 30px
+    const randomDelay = Math.random() * 0.1; // Hasta 1.5s de retraso
+    const randomDuration = Math.random() * 5.5 + 3.8; // Duración entre 0.8s y 1.3s
+
+    spark.style.left = `${Math.random() * 100}%`; // Posición horizontal aleatoria
+    spark.style.setProperty("--random-x", `${randomX}px`); // Movimiento lateral aleatorio
+    spark.style.animationDelay = `${randomDelay}s`; // Retraso aleatorio
+    spark.style.animationDuration = `${randomDuration}s`; // Velocidad aleatoria
+
+    container.appendChild(spark);
+
+    // Eliminar la chispa después de su animación
+    setTimeout(() => {
+        spark.remove();
+    }, (randomDuration + randomDelay) * 1900);
+}
+
+// Crear chispas constantemente
+setInterval(createSpark, 200); // Genera una chispa cada 200ms
