@@ -149,6 +149,7 @@ img {
         position: absolute;
         max-height: 100vh;
         z-index: -5;
+        bottom: 30px;
     }
    .footer {
     display: none;
