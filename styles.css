@@ -193,16 +193,15 @@ img {
 .spark-container {
     position: absolute;
     width: 80%;
-    bottom: 5px;
+    bottom: -10px;
     left: 50%;
     transform: translate(-50%);
-    z-index:-99;
 }
 
 .spark {
     position: absolute;
-    width: 5px;
-    height: 5px;
+    width: 3px;
+    height: 3px;
     background: orange;
     border-radius: 50%;
     opacity: 0.8;
