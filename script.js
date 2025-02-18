@@ -117,9 +117,9 @@ function createSpark() {
     spark.classList.add("spark");
 
     // Posición inicial aleatoria dentro del contenedor
-    const randomX = Math.random() * 160 - 100; // De -30px a 30px
+    const randomX = Math.random() * 200 - 100; // De -30px a 30px
     const randomDelay = Math.random() * 0.1; // Hasta 1.5s de retraso
-    const randomDuration = Math.random() * 7.5 + 3.8; // Duración entre 0.8s y 1.3s
+    const randomDuration = Math.random() * 9.5 + 3.8; // Duración entre 0.8s y 1.3s
 
     spark.style.left = `${Math.random() * 100}%`; // Posición horizontal aleatoria
     spark.style.setProperty("--random-x", `${randomX}px`); // Movimiento lateral aleatorio
