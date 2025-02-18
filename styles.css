@@ -205,7 +205,7 @@ img {
     background: orange;
     border-radius: 50%;
     opacity: 0.8;
-    animation: rise 1s ease-in-out infinite;
+    animation: rise 2s ease-in-out infinite;
 }
 
 @keyframes rise {
@@ -214,7 +214,7 @@ img {
         opacity: 1;
     }
     100% {
-        transform: translateY(-100vh) translateX(var(--random-x)) scale(0);
+        transform: translateY(-300px) translateX(var(--random-x)) scale(0);
         opacity: 0;
     }
 }
