@@ -7,7 +7,7 @@
     --p: #4b0082;
 }
 * {
-    
+    overflow: hidden;
     box-sizing: border-box; 
 }
 html {
