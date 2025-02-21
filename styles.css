@@ -124,6 +124,9 @@ font-family: 'Cinzel', serif;
     justify-content: space-evenly;
     
 }
+#monsterStats {
+    display: none;
+}
 #monsterStats > span{
     display: block;
     
@@ -200,9 +203,9 @@ img {
 
 .spark {
     position: absolute;
-    width: 3px;
-    height: 3px;
-    background: orange;
+    width: 2px;
+    height: 2px;
+    background: rgb(166, 255, 0);
     border-radius: 50%;
     opacity: 0.8;
     animation: rise 2s ease-in-out infinite;
